@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Bienvenido a la documentación del TFG de Andrés Mena &mdash; documentación de TFG - </title>
+  <title>Documentación del TFG de Andrés Mena &mdash; documentación de TFG - </title>
   
 
   
@@ -88,12 +88,12 @@
             
               <!-- Local TOC -->
               <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Bienvenido a la documentación del TFG de Andrés Mena</a><ul>
+<li><a class="reference internal" href="#">Documentación del TFG de Andrés Mena</a><ul>
 <li><a class="reference internal" href="#modulo-paciente-implementacion">Modulo Paciente. Implementación</a></li>
 <li><a class="reference internal" href="#modulo-manager-paciente-implementacion">Modulo Manager Paciente. Implementación</a></li>
 <li><a class="reference internal" href="#modulo-gestion-lectura-paciente-implementacion">Modulo Gestión lectura Paciente. Implementación</a></li>
 <li><a class="reference internal" href="#modulo-utils-implementacion">Modulo Utils. Implementación</a></li>
-<li><a class="reference internal" href="#contacto">Contacto</a></li>
+<li><a class="reference internal" href="#codigo-fuente-y-contacto">Código fuente y contacto</a></li>
 </ul>
 </li>
 </ul>
@@ -144,7 +144,7 @@
     
       <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Bienvenido a la documentación del TFG de Andrés Mena</li>
+      <li>Documentación del TFG de Andrés Mena</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -163,15 +163,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="bienvenido-a-la-documentacion-del-tfg-de-andres-mena">
-<h1>Bienvenido a la documentación del TFG de Andrés Mena<a class="headerlink" href="#bienvenido-a-la-documentacion-del-tfg-de-andres-mena" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="section" id="documentacion-del-tfg-de-andres-mena">
+<h1>Documentación del TFG de Andrés Mena<a class="headerlink" href="#documentacion-del-tfg-de-andres-mena" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>En esta documentacion, se detallan los detalles de la implementación de la clase paciente, así como los módulos auxiliares utilizados para su implementación.</p>
 <div class="toctree-wrapper compound">
 </div>
 <span class="target" id="module-paciente"></span><div class="section" id="modulo-paciente-implementacion">
 <h2>Modulo Paciente. Implementación<a class="headerlink" href="#modulo-paciente-implementacion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>En este modulo se implementa la clase paciente, la cual se encargará
-de gestionar el procesado y calculo de estadísticas de un paciente.</p>
+de gestionar el procesado y cálculo de estadísticas de un paciente.</p>
 <p>Se implementan distintas funciones para calcular los índices de apnea e
 hipopnea del paciente, así como para calcular estadísticas sobre el retraso que
 tienen las señales, y la correlación existente entre las mismas.</p>
@@ -182,7 +182,7 @@ tienen las señales, y la correlación existente entre las mismas.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="paciente.Paciente.df">
 <span class="sig-name descname"><span class="pre">df</span></span><a class="headerlink" href="#paciente.Paciente.df" title="Enlazar permanentemente con esta definición">¶</a></dt>
-<dd><p>Dataframe con toda la informacion de las señales del paciente.</p>
+<dd><p>Dataframe con toda la información de las señales del paciente.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pd.DataFrame</span></code></p>
@@ -193,7 +193,7 @@ tienen las señales, y la correlación existente entre las mismas.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="paciente.Paciente.filename">
 <span class="sig-name descname"><span class="pre">filename</span></span><a class="headerlink" href="#paciente.Paciente.filename" title="Enlazar permanentemente con esta definición">¶</a></dt>
-<dd><p>Nombre del fichero de donde se ha leido el paciente.</p>
+<dd><p>Nombre del fichero de donde se ha leído el paciente.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
@@ -285,23 +285,23 @@ columnas del fichero csv.</p>
 <dt class="sig sig-object py" id="paciente.Paciente.almacenar_paciente">
 <span class="sig-name descname"><span class="pre">almacenar_paciente</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#paciente.Paciente.almacenar_paciente" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Almacena la información del paciente serializada.</p>
-<p>Almacena el objeto paciente serializado, haciendo uso de la librería
-Pickle.</p>
+<p>Haciendo uso de la librería Pickle, almacena el objeto paciente
+serializado.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="paciente.Paciente.calcular_indices_paciente">
 <span class="sig-name descname"><span class="pre">calcular_indices_paciente</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#paciente.Paciente.calcular_indices_paciente" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Calcula los índices de apnea, hipopnea y apnea-hipopnea.</p>
-<p>Calcula los índices de apnea, hipopnea y apnea-hipopnea, y almacena
-dicha información en los atributos del paciente.</p>
+<p>Calcula y almacena en los atributos del paciente los índices de apnea,
+hipopnea y apnea-hipopnea.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="paciente.Paciente.clean_memory">
 <span class="sig-name descname"><span class="pre">clean_memory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#paciente.Paciente.clean_memory" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Realiza limpieza de memoria.</p>
-<p>Elimina la información relativa al fichero de datos que se ha leido al
+<p>Elimina la información relativa al fichero de datos que se ha leído al
 inicializar el paciente. Función útil cuando se quieren leer múltiples
 pacientes en RAM pero no se necesita la información leída del fichero.</p>
 </dd></dl>
@@ -311,18 +311,19 @@ pacientes en RAM pero no se necesita la información leída del fichero.</p>
 <span class="sig-name descname"><span class="pre">comprobar_validez_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.002</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#paciente.Paciente.comprobar_validez_dataset" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Comprueba que los datos del paciente sean válidado.</p>
 <p>Se comprueba que todas las columnas indicadas como variables
-significativas al inicializar contengan valores. Se tolera un threshold
-(porcentaje) de valores nan en la columna estudiada, que seran
-reemplazados por la última muestra válida del mismo.</p>
+significativas al inicializar el Paciente contengan valores. Se tolera
+un threshold (porcentaje) de valores nan en la columna estudiada, y
+estos valores nan seran reemplazados por la última muestra válida de
+los datos.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parámetros</dt>
-<dd class="field-odd"><p><strong>threshold</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code>, optional) – Porcentaje de muestras vacías que se tolera que esté con
-valores nan dentro de una columna. Defaults a 0.002.</p>
+<dd class="field-odd"><p><strong>threshold</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code>, optional) – Porcentaje de muestras que se tolera que esté con valor nan
+dentro de una columna. Defaults a 0.002.</p>
 </dd>
 <dt class="field-even">Devuelve</dt>
 <dd class="field-even"><p>True si el paciente se considera válido, al cumplir los
-requisitos del mínimo número de valores que no pueden ser nan.
-False en caso contrario.</p>
+requisitos del mínimo número de valores que no pueden ser
+nan. False en caso contrario.</p>
 </dd>
 <dt class="field-odd">Tipo del valor devuelto</dt>
 <dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
@@ -332,7 +333,7 @@ False en caso contrario.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="paciente.Paciente.compute_correlation_matrix">
-<span class="sig-name descname"><span class="pre">compute_correlation_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plot_results</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pearson'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#paciente.Paciente.compute_correlation_matrix" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<span class="sig-name descname"><span class="pre">compute_correlation_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plot_results</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pearson'</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#paciente.Paciente.compute_correlation_matrix" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Calcula la matriz de correlación de las variables significativas.</p>
 <p>Se calcula y se almacena la información de la matriz de correlación.
 Se puede especificar el método de cálculo de la matriz de correlación,
@@ -354,6 +355,94 @@ plot_results es False. None en caso contrario.</p>
 <dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pd.DataFrame</span></code></p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="paciente.Paciente.compute_sincronizacion_senales">
+<span id="paciente.Paciente.compute_sincronizacion_señales"></span><span class="sig-name descname"><span class="pre">compute_sincronizacion_señales</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seconds_prior</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds_post</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_results</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main_signal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'spo2'</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#paciente.Paciente.compute_sincronizacion_senales" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Calcula el retraso entre dos señales.</p>
+<p>Para realizar el cálculo de la sincronización (el retraso) entre dos
+señales, se hace uso del módulo patient manager. Dicho retraso consiste
+en encontrar el desplazamiento necesario a aplicar a una señal frente
+a la otra para alcanzar el pico de correlación.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seconds_prior</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code>, optional) – Segundos previos sobre los que se va a desplazar la muestra
+para calcular la correlación. Defaults a 60.</p></li>
+<li><p><strong>seconds_post</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code>, optional) – Segundos posteriores sobre los que se va a desplazar la muestra
+para calcular la correlación. Defaults a 10.</p></li>
+<li><p><strong>plot_results</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code>, optional) – Indica si se quiere mostrar el resultado gráficamente.
+Defaults a False.</p></li>
+<li><p><strong>signals</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code>, optional) – Lista de señales que se desea comparar contra la señal
+main_signal. Defaults a None, en cuyo caso se usan todas las
+señales significativas del paciente.</p></li>
+<li><p><strong>main_signal</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional) – Señal usada como referencia contra las que se comparan todas
+las señales del parámetro signals.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">Ver también</p>
+<p><a class="reference internal" href="#patient_manager.plot_sincronizacion_temporal_simple" title="patient_manager.plot_sincronizacion_temporal_simple"><code class="xref py py-func docutils literal notranslate"><span class="pre">patient_manager.plot_sincronizacion_temporal_simple()</span></code></a>.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="paciente.Paciente.eliminar_outliers">
+<span class="sig-name descname"><span class="pre">eliminar_outliers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_deviations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#paciente.Paciente.eliminar_outliers" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Elimina los outliers de una columna determinada de un dataframe.</p>
+<p>En función de la desviación máxima índica, se eliminan los outliers
+sobre una copia del dataframe indicado como parámetro, en la columna
+indicada.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">pd.DataFrame</span></code>) – Dataframe que contiene la columna sobre la que se desean
+eliminar los outliers.</p></li>
+<li><p><strong>column</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Nombre de la columna del dataframe de la que se desean eliminar
+los outliers.</p></li>
+<li><p><strong>max_deviations</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>, optional) – Desviación a partir de la cual se considera que los valores son
+valores atípicos. Defaults a 5.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Copia del DataFrame proporcionado como parámetro con la columna
+indicada sin outliers.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pd.DataFrame</span></code></p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">Ver también</p>
+<p><a class="reference internal" href="#paciente.Paciente.suavizar_seniales" title="paciente.Paciente.suavizar_seniales"><code class="xref py py-func docutils literal notranslate"><span class="pre">suavizar_seniales()</span></code></a>.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="paciente.Paciente.suavizar_seniales">
+<span class="sig-name descname"><span class="pre">suavizar_seniales</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smooth_seconds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['spo2',</span> <span class="pre">'pulso']</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#paciente.Paciente.suavizar_seniales" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Realiza el suavizado de la señal utilizando una ventana desalizante.</p>
+<p>Se debe indicar el tamaño de la ventana deslizante, así como las
+columnas sobre las que se desea aplicar el suavizado de la señal. De
+igual forma, se eliminan los outliers de las señales que se suavizan.
+El DataFrame con las señales suavizadas se almacena dentro de la
+clase, en el atributo df_smoothed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>smooth_seconds</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>, optional) – Numero de segundos que forman la ventana deslizante del
+suavizado. Defaults a 5.</p></li>
+<li><p><strong>columns</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code>) – Lista de nombres de columnas del dataframe sobre las que se
+desea eliminar los outliers. Defaults a [«spo2», «pulso»]</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">Ver también</p>
+<p><a class="reference internal" href="#paciente.Paciente.eliminar_outliers" title="paciente.Paciente.eliminar_outliers"><code class="xref py py-func docutils literal notranslate"><span class="pre">eliminar_outliers()</span></code></a>.</p>
+</div>
 </dd></dl>
 
 </dd></dl>
@@ -384,7 +473,7 @@ retraso que tienen las señales.</p>
 </dl>
 <div class="admonition seealso">
 <p class="admonition-title">Ver también</p>
-<p>obtener_tramos_activos().</p>
+<p><a class="reference internal" href="#patient_manager.obtener_tramos_activos" title="patient_manager.obtener_tramos_activos"><code class="xref py py-func docutils literal notranslate"><span class="pre">obtener_tramos_activos()</span></code></a>.</p>
 </div>
 </dd></dl>
 
@@ -392,9 +481,9 @@ retraso que tienen las señales.</p>
 <dt class="sig sig-object py" id="patient_manager.extract_stats_from_rs">
 <span class="sig-prename descclassname"><span class="pre">patient_manager.</span></span><span class="sig-name descname"><span class="pre">extract_stats_from_rs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds_prior</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds_post</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_step</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#patient_manager.extract_stats_from_rs" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Extrae las estadísticas a partir de una lista con las correlaciones.</p>
-<p>A partir de la lista de lista de correlaciones, e indicando los segundos
-previos y posteriores, se calcula en qué posición se encuentra la máxima
-correlación, así como con qué retraso.</p>
+<p>A partir de la lista de correlaciones, e indicando los segundos previos y
+posteriores, se calcula en qué posición se encuentra la máxima correlación,
+así como con qué retraso.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parámetros</dt>
 <dd class="field-odd"><ul class="simple">
@@ -418,7 +507,7 @@ y el retraso de una señal respecto a la otra.</p>
 </dl>
 <div class="admonition seealso">
 <p class="admonition-title">Ver también</p>
-<p>sincronizacion_temporal_simple(), extract_stats_from_rs()</p>
+<p><a class="reference internal" href="#patient_manager.sincronizacion_temporal_simple" title="patient_manager.sincronizacion_temporal_simple"><code class="xref py py-func docutils literal notranslate"><span class="pre">sincronizacion_temporal_simple()</span></code></a>.</p>
 </div>
 </dd></dl>
 
@@ -446,15 +535,15 @@ tramos el valor de la columna indicada se encuentra 1.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="patient_manager.plot_sincronizacion_temporal_simple">
-<span class="sig-prename descclassname"><span class="pre">patient_manager.</span></span><span class="sig-name descname"><span class="pre">plot_sincronizacion_temporal_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lag_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds_prior</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds_post</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">savefig</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#patient_manager.plot_sincronizacion_temporal_simple" title="Enlazar permanentemente con esta definición">¶</a></dt>
-<dd><p>Realiza la representación gráfica del retraso de una señal frente a otra.</p>
-<p>Se representa gráficamente el retraso. Utilizando los parámetros
-de la función, se especifica los resultados que se han obtenido al calcular
-la correlación conforme se desplaza la señal.</p>
+<span class="sig-prename descclassname"><span class="pre">patient_manager.</span></span><span class="sig-name descname"><span class="pre">plot_sincronizacion_temporal_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lag_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds_prior</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds_post</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">savefig</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#patient_manager.plot_sincronizacion_temporal_simple" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Realiza la representación gráfica del retraso entre dos señales.</p>
+<p>Se representa gráficamente el retraso. Utilizando los parámetros de la
+función, se especifican los resultados que se han obtenido al calcular la
+correlación conforme se desplaza la señal.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parámetros</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rs</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code>) – lista de valores de la correlación</p></li>
+<li><p><strong>rs</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code>) – lista de valores de la correlación.</p></li>
 <li><p><strong>lag_list</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code>) – lista con los desplazamientos en los que se ha calculado la
 correlación.</p></li>
 <li><p><strong>column1</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Primera columna de la que se quieren extraer los datos para
@@ -473,13 +562,14 @@ fichero pdf. Defaults a False.</p></li>
 </dl>
 <div class="admonition seealso">
 <p class="admonition-title">Ver también</p>
-<p>sincronizacion_temporal_simple(), extract_stats_from_rs()</p>
+<p><a class="reference internal" href="#patient_manager.sincronizacion_temporal_simple" title="patient_manager.sincronizacion_temporal_simple"><code class="xref py py-func docutils literal notranslate"><span class="pre">sincronizacion_temporal_simple()</span></code></a>,
+<a class="reference internal" href="#patient_manager.extract_stats_from_rs" title="patient_manager.extract_stats_from_rs"><code class="xref py py-func docutils literal notranslate"><span class="pre">extract_stats_from_rs()</span></code></a>.</p>
 </div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="patient_manager.sincronizacion_temporal_simple">
-<span class="sig-prename descclassname"><span class="pre">patient_manager.</span></span><span class="sig-name descname"><span class="pre">sincronizacion_temporal_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds_prior</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds_post</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_results</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#patient_manager.sincronizacion_temporal_simple" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">patient_manager.</span></span><span class="sig-name descname"><span class="pre">sincronizacion_temporal_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds_prior</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seconds_post</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_results</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#patient_manager.sincronizacion_temporal_simple" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Calcula el retraso de una señal frente a otra.</p>
 <p>Se calcula el retraso de una señal frente a otra. Utilizando los parámetros
 de la función, se puede especificar el rango de desplazamiento de las
@@ -503,7 +593,7 @@ Defaults a False.</p></li>
 </dd>
 <dt class="field-even">Devuelve</dt>
 <dd class="field-even"><p>Si se muestran los resultados gráficamente, no devuelve nada.
-En caso contrario, devuelve una lista con el primer elemento el una
+En caso contrario, devuelve una lista con el primer elemento una
 lista de valores de la correlación, y el segundo elemento una
 lista con los desplazamientos en los que se ha calculado la
 correlación.</p>
@@ -514,7 +604,7 @@ correlación.</p>
 </dl>
 <div class="admonition seealso">
 <p class="admonition-title">Ver también</p>
-<p>plot_sincronizacion_temporal_simple().</p>
+<p><a class="reference internal" href="#patient_manager.plot_sincronizacion_temporal_simple" title="patient_manager.plot_sincronizacion_temporal_simple"><code class="xref py py-func docutils literal notranslate"><span class="pre">plot_sincronizacion_temporal_simple()</span></code></a>.</p>
 </div>
 </dd></dl>
 
@@ -526,7 +616,7 @@ correlación.</p>
 un fichero csv con las estadísticas de un paciente.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="gestor_lectura.generate_time">
-<span class="sig-prename descclassname"><span class="pre">gestor_lectura.</span></span><span class="sig-name descname"><span class="pre">generate_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initial_time_hour</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_time_minute</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_time_second</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_step</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_samples</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_lectura.generate_time" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">gestor_lectura.</span></span><span class="sig-name descname"><span class="pre">generate_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initial_time_hour</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_time_minute</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_time_second</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_step</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_samples</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#gestor_lectura.generate_time" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Función que genera n marcas de tiempo a partir de un instante dado.</p>
 <p>A partir de la hora inicial indicada en los parámetros de la función, y
 con el espacio entre muestras indicado, genera el número de muestras
@@ -574,7 +664,7 @@ del conjunto de datos.</p>
 </dl>
 <div class="admonition seealso">
 <p class="admonition-title">Ver también</p>
-<p>transformar_nombres_columnas(), generate_time().</p>
+<p><a class="reference internal" href="#gestor_lectura.transformar_nombres_columnas" title="gestor_lectura.transformar_nombres_columnas"><code class="xref py py-func docutils literal notranslate"><span class="pre">transformar_nombres_columnas()</span></code></a>, <a class="reference internal" href="#gestor_lectura.generate_time" title="gestor_lectura.generate_time"><code class="xref py py-func docutils literal notranslate"><span class="pre">generate_time()</span></code></a></p>
 </div>
 </dd></dl>
 
@@ -590,43 +680,17 @@ generado los datos.</p>
 <dd class="field-odd"><p><strong>filename</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Nombre del fichero que contiene la información del paciente.</p>
 </dd>
 <dt class="field-even">Devuelve</dt>
-<dd class="field-even"><p>DataFrame con el contenido del fichero leído.</p>
+<dd class="field-even"><p>Time step entre las muestras de las observaciones del fichero CSV.</p>
 </dd>
 <dt class="field-odd">Tipo del valor devuelto</dt>
-<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pd.DataFrame</span></code></p>
-</dd>
-</dl>
-<div class="admonition seealso">
-<p class="admonition-title">Ver también</p>
-<p>transformar_nombres_columnas(), generate_time().</p>
-</div>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="gestor_lectura.obtener_tramos_activos">
-<span class="sig-prename descclassname"><span class="pre">gestor_lectura.</span></span><span class="sig-name descname"><span class="pre">obtener_tramos_activos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colname</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#gestor_lectura.obtener_tramos_activos" title="Enlazar permanentemente con esta definición">¶</a></dt>
-<dd><p>Calcula los índices de los tramos activos.</p>
-<p>Dado un dataframe, y un nombre de columna a estudiar, se analiza en qué
-tramos el valor de la columna indicada se encuentra 1.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parámetros</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>df</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">pd.DataFrame</span></code>) – DataFrame que contiene la información que se desea analizar.</p></li>
-<li><p><strong>colname</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Nombre de la columna del DataFrame que se desea estudiar.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Devuelve</dt>
-<dd class="field-even"><p>Lista de tuplas con los tramos activos.</p>
-</dd>
-<dt class="field-odd">Tipo del valor devuelto</dt>
-<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></p>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="gestor_lectura.transformar_nombres_columnas">
-<span class="sig-prename descclassname"><span class="pre">gestor_lectura.</span></span><span class="sig-name descname"><span class="pre">transformar_nombres_columnas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombres</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_transformer</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">dict</span><a class="headerlink" href="#gestor_lectura.transformar_nombres_columnas" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">gestor_lectura.</span></span><span class="sig-name descname"><span class="pre">transformar_nombres_columnas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombres</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_transformer</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#gestor_lectura.transformar_nombres_columnas" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Realiza la transformación de los nombres de la columnas.</p>
 <p>A partir de una lista de nombres de columnas, transforma los mismos
 eliminando el texto irrelevante de las mismas.</p>
@@ -719,8 +783,9 @@ fuente.</p></li>
 </dd></dl>
 
 </div>
-<div class="section" id="contacto">
-<h2>Contacto<a class="headerlink" href="#contacto" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="codigo-fuente-y-contacto">
+<h2>Código fuente y contacto<a class="headerlink" href="#codigo-fuente-y-contacto" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El código fuente de la implementación se encuentra disponible en <a class="reference external" href="https://github.com/Andresmena99/TFG">github</a>.</p>
 <p>Si se desea ampliar la información sobre los detalles de implementación, contactar con <script type="text/javascript">document.write(
     "<n pynff=\"ersrerapr rkgreany\" uers=\"znvygb:naqerfzrantbqvab\100tznvy\056pbz\">naqerfzrantbqvab\100tznvy\056pbz<\057n>".replace(/[a-zA-Z]/g,
         function(c){
